@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .para{
+                color:blue;
+                font-size:42px;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="para">This is first para</p>
+        <p class="para">This is second para</p>
+        <p class="para">This is third para</p>
+
+        <script>
+            var p = document.getElementsByClassName('para')
+            console.log(p[0].innerHTML)
+            console.log(p[1].innerHTML)
+            console.log(p[2].innerHTML)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form onsubmit="login()">
+            <label>Username:</label>
+            <input type="text" id="username" />
+            <label>Password:</label>
+            <input type="password" id="password" />
+            <button>Sumbit</button>
+        </form>
+        <script>
+
+            function login(){
+                event.preventDefault()
+                var username = document.getElementById('username')
+                var password = document.getElementById('password')
+
+                console.log(username.value, password.value)
+            }
+
+        </script>
+    </body>
+</html>

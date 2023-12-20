@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .element{
+                color:black;
+                height:400px;
+                width:50%;
+                border:1px solid red;
+                font-size:108px;
+                background-color:"yellow"
+            }
+        </style>
+    </head>
+    <body>
+        <div class="element">This some div element</div>
+
+        <script>
+            var ele = document.getElementsByClassName('element')
+            ele[0].style.color = "blue"
+            ele[0].style.padding = "2%"
+            ele[0].style.margin = "1%"
+            ele[0].style.fontSize = "48px"
+            ele[0].style.backgroundColor = "purple"
+            console.log(ele[0])
+        </script>
+    </body>
+</html>
