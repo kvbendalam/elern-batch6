@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        .container{
+            text-align: center;
+            margin: 0 auto;
+        }
+        #inputBtn{
+            width:60%;
+            height:50px;
+            border: 1px solid balck;
+            font-size:48px;
+        }
+        #searchBtn{
+            width: 20%;
+            height:50px;
+            margin:10px;
+            font-size:24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <input type="text" id="inputBtn"/>
+        <br/>
+        <input type="button" value="Add Todo" id="searchBtn" onclick="addNewTodoList()"/>
+        <ul id="results"></ul>
+    </div>
+
+    <script>
+        function addNewTodoList(){
+            var inputBtn = document.getElementById("inputBtn")
+            var ul = document.getElementById('results')
+            var li = document.createElement('li')
+            li.innerHTML += inputBtn.value;
+            ul.appendChild(li)
+        }
+    </script>
+</body>
+</html>
