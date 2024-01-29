@@ -1,0 +1,23 @@
+#username{
+    margin:10px;
+    width:400px;
+    height:40px;
+    /* font-size:48px; */
+    border:1px solid black;
+}
+
+#password{
+    margin:10px;
+    width:400px;
+    height:40px;
+    /* font-size:48px; */
+    border:1px solid black;
+}
+
+.btn{
+    margin:10px;
+    width:400px;
+    height:36px;
+    /* font-size: 26px; */
+    border:1px solid black;
+}

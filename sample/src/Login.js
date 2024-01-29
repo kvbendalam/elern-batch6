@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import './Login.css'
 
-function Login() {
+export function Login() {
     const [username, setUsername ] = useState('')
     const [password, setPassword] = useState('')
 
@@ -17,13 +18,19 @@ function Login() {
     }
 
   return (
-    <div>
-        <h1>Login</h1>
-        <input type="text" placeholder='Username' onChange={getUsername}/>
-        <input type="password" placeholder='Password' onChange={getPassword}/>
-        <button onClick={submitHandler}>Sumbit</button>
-    </div>
+    <>
+        <h1 style={{color:"red", backgroundColor:"blue"}}>Login</h1>
+        <input id="username" type="text" placeholder='Username' onChange={getUsername}/>
+        <input id="password" type="password" placeholder='Password' onChange={getPassword}/>
+        <button onClick={submitHandler} className='btn'>Sumbit</button>
+    </>
   )
 }
 
-export default Login
+export function Registration(){
+  return (
+    <>
+      This is registration page
+    </>
+  )
+}

@@ -1,11 +1,11 @@
 import './App.css';
-import Login from './Login';
+import ConditionalRendering from './ConditionalRendering';
 
 function App() {
 
   return (
     <div className="App">
-       <Login/>
+      <ConditionalRendering/>
     </div>
   );
 }
