@@ -1,11 +1,10 @@
 import './App.css';
-import ConditionalRendering from './ConditionalRendering';
+import PostAPICall from './PostAPICall';
 
 function App() {
-
   return (
     <div className="App">
-      <ConditionalRendering/>
+      <PostAPICall/>
     </div>
   );
 }
